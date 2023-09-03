@@ -1,7 +1,31 @@
-h2 id= "quienes_somos"{
-    
+h2 {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 600; 
+  color: #333; 
+  font-size: 28px; /* Tamaño de fuente*/
+  margin-bottom: 15px; /* Añade pequeño margen inferior para separarlos del contenido */
+  text-decoration: none; /* Quita decoración de subrayado */
+  transition: color 0.3s, border-bottom 0.3s; /* Transiciones suaves para el color */
 }
-  
+
+
+
+h2:hover {
+  color: #495054; /* Cambia el color cuando pasas el mouse */
+  border-bottom: 2px solid #474c4f; /* Añade un subrayado cuando se pasa el mouse */
+}
+
+  /* Estilo para el párrafo */
+#parrafo-quienes-somos {
+  transition: background-color 0.5s, color 0.5s; /* Agrega una transición suave */
+}
+
+/* Estilo para el párrafo resaltado */
+#parrafo-quienes-somos.highlighted {
+  background-color: #a2a8ac; /* Cambia el fondo a un color de tu elección */
+  color: #fff; /* Cambia el color del texto a uno legible sobre el fondo */
+}
+
 
 
 /* propiedades en venta */
