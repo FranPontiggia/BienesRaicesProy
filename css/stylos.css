@@ -1,7 +1,31 @@
+body {
+  background: linear-gradient(135deg, #a4cde8, #e3c597);
+}
+
+
+/* color de fondo de la barra de navegación */
+.navbar {
+  background-color: #65707d; /* Cambia el color de fondo a azul */
+}
+
+/* color del texto de los enlaces de navegación */
+.navbar-nav .nav-link {
+  color: rgb(16, 1, 1); /* Cambia el color del texto a blanco */
+}
+
+
+
+/* Cambia el color del borde inferior al pasar el mouse sobre los enlaces */
+.navbar-nav .nav-link:hover {
+  border-bottom: 2px solid rgb(46, 42, 53); /* Cambia el borde a blanco al pasar el mouse */
+}
+
+
+
 h2 {
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'cabin', sans-serif; 
   font-weight: 600; 
-  color: #333; 
+  color: #4e4c4c; 
   font-size: 28px; /* Tamaño de fuente*/
   margin-bottom: 15px; /* Añade pequeño margen inferior para separarlos del contenido */
   text-decoration: none; /* Quita decoración de subrayado */
