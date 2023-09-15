@@ -1,5 +1,12 @@
 body {
-  background: linear-gradient(135deg, #a4cde8, #e3c597);
+  body {
+    background-image: url('img/fondo 4.jpeg');
+    background-size: cover; /* Esto ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija mientras se desplaza la página */
+  }
+  
+ /*background: linear-gradient(135deg, #a4cde8, #e3c597);
 }
 
 
