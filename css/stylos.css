@@ -1,3 +1,16 @@
+/* Estilos para centrar el título en el header */
+header h1 {
+  text-align: center; /* Centra el texto horizontalmente */
+}
+/* Opcional: Estilos adicionales para el título */
+header h1 {
+  font-size: 40px; /* Tamaño de fuente */
+  color: #fff; /* Color del texto */
+  /* Otros estilos de fuente y diseño que desees */
+}
+
+
+
 body {
   background-color: #b0ceef;
   background-size: cover;
