@@ -9,19 +9,34 @@ document.addEventListener("DOMContentLoaded", function () {
       parrafoQuienesSomos.classList.toggle('highlighted');
     }, 1000);
   });
-});
+
+  // Inicializa EmailJS
+  (function() {
+    // MI clave pública de EmailJS
+    emailjs.init('NFZ0f8AnPcq8mlMM-');
+  })();
+
+  
+
 
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      // Genera un número aleatorio de cinco dígitos para la variable 'contact_number'
-      this.contact_number.value = Math.random() * 100000 | 0;
-      // Estos IDs deben coincidir con los valores que configuraste en EmailJS
-      emailjs.sendForm('service_5vnd5v9', 'template_ea6raia', this)
-          .then(function() {
-              console.log('SUCCESS!');
-          }, function(error) {
-              console.log('FAILED...', error);
-          });
+    event.preventDefault();
+    const btn = document.querySelector('button[type="submit"]');
+    btn.value = 'Enviando...';
+
+    const serviceID = 'service_ndf8bew';
+    const templateID = 'template_ea6raia';
+
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        btn.value = 'ENVIAR MENSAJE';
+        document.getElementById('success-message').classList.remove('d-none');
+      })
+      .catch((err) => {
+        btn.value = 'ENVIAR MENSAJE';
+        document.getElementById('error-message').classList.remove('d-none');
+        console.error('Error al enviar el mensaje:', err);
+      });
   });
-}
+};

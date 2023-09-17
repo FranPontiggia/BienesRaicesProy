@@ -1,153 +1,197 @@
 body {
-  body {
-    background-image: url('img/fondo 4.jpeg');
-    background-size: cover; /* Esto ajusta la imagen para cubrir todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Mantiene la imagen fija mientras se desplaza la página */
-  }
-  
- /*background: linear-gradient(135deg, #a4cde8, #e3c597);
+  background-image: URL('img/fondo4.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-
-/* color de fondo de la barra de navegación */
+/* Color de fondo de la barra de navegación */
 .navbar {
-  background-color: #65707d; /* Cambia el color de fondo a azul */
+  background-color: #65707d;
 }
 
-/* color del texto de los enlaces de navegación */
+/* Color del texto de los enlaces de navegación */
 .navbar-nav .nav-link {
-  color: rgb(16, 1, 1); /* Cambia el color del texto a blanco */
+  color: #161616;
 }
-
-
 
 /* Cambia el color del borde inferior al pasar el mouse sobre los enlaces */
 .navbar-nav .nav-link:hover {
-  border-bottom: 2px solid rgb(46, 42, 53); /* Cambia el borde a blanco al pasar el mouse */
+  border-bottom: 2px solid #2e2a35;
 }
-
-
 
 h2 {
-  font-family: 'cabin', sans-serif; 
-  font-weight: 600; 
-  color: #4e4c4c; 
-  font-size: 28px; /* Tamaño de fuente*/
-  margin-bottom: 15px; /* Añade pequeño margen inferior para separarlos del contenido */
-  text-decoration: none; /* Quita decoración de subrayado */
-  transition: color 0.3s, border-bottom 0.3s; /* Transiciones suaves para el color */
+  font-family: 'cabin', sans-serif;
+  font-weight: 600;
+  color: #4e4c4c;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
 }
-
-
 
 h2:hover {
-  color: #495054; /* Cambia el color cuando pasas el mouse */
-  border-bottom: 2px solid #474c4f; /* Añade un subrayado cuando se pasa el mouse */
+  color: #495054;
+  border-bottom: 2px solid #474c4f;
 }
 
-  /* Estilo para el párrafo */
+/* Estilo para el párrafo */
 #parrafo-quienes-somos {
-  transition: background-color 0.5s, color 0.5s; /* Agrega una transición suave */
+  transition: background-color 0.5s, color 0.5s;
 }
 
 /* Estilo para el párrafo resaltado */
 #parrafo-quienes-somos.highlighted {
-  background-color: #a2a8ac; /* Cambia el fondo a un color de tu elección */
-  color: #fff; /* Cambia el color del texto a uno legible sobre el fondo */
+  background-color: #83c5f1;
+  color: #f6c9c9;
 }
 
-
-
-/* propiedades en venta */
+/* Propiedades en venta */
 #propiedades-venta {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  
-  /*  descripciones de propiedades */
-  .descripcion-propiedad {
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para el carrusel */
-  #carrusel-venta {
-    margin-top: 20px;
-  }
-  
-  /* Estilos para las flechas de navegación del carrusel */
-  .carousel-control-prev,
-  .carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    font-size: 30px;
-    color: #fff;
-  }
-  
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
 
-  
-  /* Estilos para las ventanas emergentes */
+/* Descripciones de propiedades */
+.descripcion-propiedad {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el carrusel */
+#carrusel-venta {
+  margin-top: 20px;
+}
+
+/* Estilos para las flechas de navegación del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Estilos para las ventanas emergentes */
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  
-  .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Estilos para cerrar las ventanas emergentes */
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-  }
-  
-  /* Estilos para las tarjetas de propiedades */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para cerrar las ventanas emergentes */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para las tarjetas de propiedades */
 .card {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-  }
-  
-  .card-price {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #007bff;
-  }
-  
-  /* Agrega más estilos según tus preferencias */
-  
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.custom-bg {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente para el formulario */
+  color: #fff; /* Texto en blanco */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.custom-bg label {
+  color: #a0a0a0; /* Color de etiquetas en gris claro */
+}
+
+.custom-bg textarea,
+.custom-bg input[type="text"],
+.custom-bg input[type="email"] {
+  background-color: rgba(255, 255, 255, 0.2); /* Campos de entrada con fondo blanco semi-transparente */
+  color: #fff; /* Texto en blanco */
+}
+
+.custom-bg textarea::placeholder,
+.custom-bg input[type="text"]::placeholder,
+.custom-bg input[type="email"]::placeholder {
+  color: #a0a0a0; /* Color de marcador de posición en gris claro */
+}
+
+.custom-bg button[type="submit"] {
+  background-color: #007bff; /* Fondo azul claro para el botón */
+  border-color: #007bff; /* Borde del botón en azul claro */
+}
+
+.custom-bg button[type="submit"]:hover {
+  background-color: #0056b3; /* Cambia el fondo del botón al hacer hover */
+  border-color: #0056b3; /* Cambia el borde del botón al hacer hover */
+}
+
+/* Mensajes de éxito y error */
+.alert {
+  margin-top: 20px; /* Espacio entre el formulario y los mensajes */
+}
+
+/* Agrega más estilos según tus preferencias */
+Asegúrate de que este archivo CSS ("stylos.css") esté vinculado correctamente en tu archivo HTML. Con estos estilos, deberías poder personalizar el aspecto de tu formulario y de la página en general. Puedes ajustar los valores de colores, márgenes, fuentes y otros estilos según tus preferencias.
+
+
+
+
+
+
+/* Estilos específicos para la página de contacto */
+body.contacto {
+  background-color: #000;
+  color: #fff;
+  /* Otros estilos específicos para la página de contacto */
+}
+De esta manera, los estilos que se aplican a body.contacto solo afectarán a la página de contacto y no afectarán a otras páginas que no tengan esta clase en su elemento body. Asegúrate de aplicar esta clase o identificador solo en la página de contacto y no en otras páginas si deseas mantener los estilos separados.
+
+
+
+
+
+
+
