@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       parrafoQuienesSomos.classList.toggle('highlighted');
     }, 1000);
   });
+});
 
   // Inicializa EmailJS
   (function() {
@@ -16,27 +17,24 @@ document.addEventListener("DOMContentLoaded", function () {
     emailjs.init('NFZ0f8AnPcq8mlMM-');
   })();
 
+  window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const btn = document.querySelector('button[type="submit"]');
+      btn.value = 'Enviando...';
   
-
-
-window.onload = function() {
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const btn = document.querySelector('button[type="submit"]');
-    btn.value = 'Enviando...';
-
-    const serviceID = 'service_ndf8bew';
-    const templateID = 'template_ea6raia';
-
-    emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        btn.value = 'ENVIAR MENSAJE';
-        document.getElementById('success-message').classList.remove('d-none');
-      })
-      .catch((err) => {
-        btn.value = 'ENVIAR MENSAJE';
-        document.getElementById('error-message').classList.remove('d-none');
-        console.error('Error al enviar el mensaje:', err);
-      });
-  });
-};
+      const serviceID = 'service_ndf8bew';
+      const templateID = 'template_ea6raia';
+  
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'ENVIAR MENSAJE';
+          alert('Mensaje enviado correctamente!');
+        })
+        .catch((err) => {
+          btn.value = 'ENVIAR MENSAJE';
+          alert(JSON.stringify(err));
+        });
+    });
+  };
+  
