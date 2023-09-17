@@ -29,10 +29,18 @@ document.addEventListener("DOMContentLoaded", function () {
       emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
           btn.value = 'ENVIAR MENSAJE';
-          alert('Mensaje enviado correctamente!');
+          document.getElementById('success-message').classList.remove('d-none');
+        document.getElementById('error-message').classList.add('d-none'); // Oculta el mensaje de error si estaba visible.
+          
+          // Restablecer los valores de los campos del formulario
+          document.getElementById('user_name').value = '';
+          document.getElementById('user_email').value = '';
+          document.getElementById('message').value = '';
         })
         .catch((err) => {
           btn.value = 'ENVIAR MENSAJE';
+          document.getElementById('success-message').classList.add('d-none'); // Oculta el mensaje de éxito si estaba visible.
+          document.getElementById('error-message').classList.remove('d-none');
           alert(JSON.stringify(err));
         });
     });
